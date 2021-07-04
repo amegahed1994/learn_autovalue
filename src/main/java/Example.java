@@ -1,9 +1,11 @@
 import com.google.auto.value.AutoValue;
 
+import javax.annotation.Nullable;
+
 public class Example {
     @AutoValue
     public abstract static class Inner {
-        public abstract String getCurrency();
+        @Nullable public abstract String getCurrency();
 
         public abstract long getAmount();
 
